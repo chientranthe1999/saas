@@ -22,10 +22,9 @@
     "src/*.tsx?": "yarn test"
   },
   "dependencies": {
-    "@douyinfe/semi-icons": "^2.0.8",
-    "@douyinfe/semi-ui": "^2.0.1",
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.16",
     "@reduxjs/toolkit": "^1.6.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",

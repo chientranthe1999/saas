@@ -1,5 +1,5 @@
-import React, { lazy, Suspense } from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import PageLoading from '@/components/common/PageLoading';
 import SubPage from '@/pages/admin/SubPage';
@@ -12,7 +12,7 @@ const Login = lazy(() => import('@/pages/Login'));
 const AppRoutes = () => {
   console.log('AppRoutes render...');
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route
           path={`/`}
@@ -35,7 +35,7 @@ const AppRoutes = () => {
         </Route>
         <Route path={'*'} element={<NotFound />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
