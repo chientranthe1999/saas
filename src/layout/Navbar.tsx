@@ -1,23 +1,23 @@
-import { Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 const NavBar = () => {
   return (
-    <nav className="flex h-[91px] items-center justify-between px-20">
-      <p className="text-primary font-bold">Banquee.</p>
-      <ul className="flex">
-        <li>Features</li>
-        <li>Compare</li>
-        <li>Support</li>
-        <li>Blog</li>
-      </ul>
+    <Box
+      component="nav"
+      className="flex items-center justify-between shadow-card lg:px-20 sm:px-6 h-[60px] fixed w-[100vw] bg-white"
+    >
+      <Typography className="font-bold" color="primary">
+        Banquee.
+      </Typography>
 
       <div>
-        <Button style={{ textTransform: 'none', marginRight: '20px' }}>Login</Button>
-        <Button variant="contained" style={{ textTransform: 'none', color: 'white' }}>
-          Open Account
+        <Button sx={{ marginRight: '20px' }}>Login</Button>
+        <Button variant="contained" sx={{ color: 'white' }}>
+          Get start free
         </Button>
       </div>
-    </nav>
+      {/* </> */}
+    </Box>
   );
 };
 
