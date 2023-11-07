@@ -5,7 +5,7 @@ const Layout = (props: Record<string, unknown>) => {
     <>
       <NavBar></NavBar>
 
-      <main className="max-w-[1080px] pt-[calc(100% - 60px)]">{props.children}</main>
+      <main className="max-w-[1080px] pt-[60px] mx-auto px-4">{props.children}</main>
     </>
   );
 };

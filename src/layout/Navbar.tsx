@@ -4,18 +4,20 @@ const NavBar = () => {
   return (
     <Box
       component="nav"
-      className="flex items-center justify-between shadow-card lg:px-20 sm:px-6 h-[60px] fixed w-[100vw] bg-white"
+      className="flex items-center justify-between shadow-card lg:px-20 sm:px-6 h-[60px] fixed w-[100vw] !bg-[white] z-[1]"
     >
-      <Typography className="font-bold" color="primary">
-        Banquee.
+      <Typography className="!font-bold" color="primary">
+        SNote
       </Typography>
 
-      <div>
-        <Button sx={{ marginRight: '20px' }}>Login</Button>
+      <Box component="div">
+        <Button variant="outlined" sx={{ marginRight: '10px' }}>
+          Login
+        </Button>
         <Button variant="contained" sx={{ color: 'white' }}>
           Get start free
         </Button>
-      </div>
+      </Box>
       {/* </> */}
     </Box>
   );

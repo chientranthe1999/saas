@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0a85d1',
+        gray: '#6b7280',
       },
       boxShadow: {
         card: '0 0 2px 0 rgba(145, 158, 171, 0.2), 0 12px 24px -4px rgba(145, 158, 171, 0.12)',
