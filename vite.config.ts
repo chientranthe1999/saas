@@ -18,7 +18,7 @@ export default defineConfig({
     minifyHtml(),
     injectHtml({
       data: {
-        title: 'React Starter Template',
+        title: 'SNote',
         injectScript: '',
       },
     }),

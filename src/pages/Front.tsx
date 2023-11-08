@@ -51,7 +51,7 @@ const Front: FC<IFront> = () => {
   };
 
   const Feature = styled('div')({
-    background: 'url(src/assets/image/bg.jpg)',
+    background: 'url(./src/assets/image/bg.jpg)',
     backgroundSize: 'cover',
     borderRadius: 4,
     position: 'absolute',

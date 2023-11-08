@@ -10,17 +10,13 @@ import { persistor, store } from '@/store';
 
 const App = () => {
   return (
-    <>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <ThemeProvider theme={theme}>
-            <Layout>
-              <AppRoutes />
-            </Layout>
-          </ThemeProvider>
-        </PersistGate>
-      </Provider>
-    </>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <ThemeProvider theme={theme}>
+          <AppRoutes />
+        </ThemeProvider>
+      </PersistGate>
+    </Provider>
   );
 };
 
